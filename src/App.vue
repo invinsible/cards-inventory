@@ -5,11 +5,13 @@ import TheMain from './components/TheMain.vue';
 </script>
 
 <template>
-  <TheHeader />
+  <div class="w-4/5 m-auto bg-white rounded-xl shadow-xl mt-14">
+    <TheHeader />
 
-  <TheMain />
+    <TheMain />
 
-  <TheFooter />
+    <TheFooter />
+  </div>
 </template>
 
 <style scoped></style>
