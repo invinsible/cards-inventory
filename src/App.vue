@@ -1,11 +1,15 @@
-<script setup></script>
+<script setup>
+import TheHeader from './components/TheHeader.vue';
+import TheFooter from './components/TheFooter.vue';
+import TheMain from './components/TheMain.vue';
+</script>
 
 <template>
-  <header></header>
+  <TheHeader />
 
-  <main>
-    <h1>Cards Inventory</h1>
-  </main>
+  <TheMain />
+
+  <TheFooter />
 </template>
 
 <style scoped></style>
