@@ -1,5 +1,10 @@
+<script setup>
+import CardsList from './cards/cardsList/CardsList.vue';
+</script>
+
 <template>
-  <main>
-    <h1>Cards Inventory</h1>
+  <main class="px-8 py-6">
+    <h1 class="font-bold text-xl mb-5">Все карты</h1>
+    <CardsList />
   </main>
 </template>
