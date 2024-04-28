@@ -4,7 +4,6 @@ import TheHeader from './components/header/TheHeader.vue';
 
 <template>
   <div class="w-3/5 m-auto bg-white rounded-xl shadow-xl mt-14">
-    <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
     <TheHeader />
     <RouterView />
   </div>
