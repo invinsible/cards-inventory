@@ -7,7 +7,7 @@ import MainMenu from './_components/MainMenu.vue';
   <header>
     <nav class="flex justify-between border-b border-slate-300 px-8 py-6">
       <Logo />
-      <MainMenu />
+      <MainMenu />      
     </nav>
   </header>
 </template>
