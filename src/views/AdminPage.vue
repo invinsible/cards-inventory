@@ -8,7 +8,7 @@
     {name: 'Студент', value: 1},
     {name: 'Школьник', value: 2}
   ];
-  
+
   const loginInput = ref('');
   const passInput = ref('');
   const descriptionInput = ref('');
@@ -22,7 +22,7 @@
   };
 </script>
 
-<template> 
+<template>
   <CustomInput
     v-model="loginInput"
     name="login"

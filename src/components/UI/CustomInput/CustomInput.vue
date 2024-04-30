@@ -30,5 +30,5 @@
     >
       {{ errorText }}
     </p>
-  </div>  
+  </div>
 </template>
