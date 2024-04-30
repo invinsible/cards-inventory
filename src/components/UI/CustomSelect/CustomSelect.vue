@@ -1,16 +1,28 @@
 <script setup>
-defineProps(['options', 'modelValue']);
-const emit = defineEmits(['update:modelValue']);
+  defineProps({
+    name: String,
+    errorText: String,
+    options: Array,
+  });
+  const model = defineModel();
+
 </script>
 
 <template>
   <select
     class="border"
-    :value="modelValue"
-    @change="emit('update:modelValue', $event.target.value)"
+    v-model="model"
+    :name="name"
   >
+    <option disabled value="">Не выбрано</option>
     <option v-for="element in options" :key="element.id" :value="element.value">
       {{ element.name }}
     </option>
   </select>
+  <p
+    v-if="errorText !== undefined"
+    class="text-xs text-red-600"
+  >
+    {{ errorText }}
+  </p>
 </template>
