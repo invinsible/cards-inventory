@@ -14,6 +14,9 @@ module.exports = {
   rules: {
     'vue/multi-word-component-names': 'off',
     "no-unused-vars": 1,
-    "semi": 2
+    "semi": 2,
+    "no-trailing-spaces": 2,
+    "no-multi-spaces": 2,
+    "no-multiple-empty-lines": 2
   }
 };
