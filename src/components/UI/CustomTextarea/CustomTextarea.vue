@@ -4,26 +4,24 @@
     name: String,
     placeholder: String,
     label: String,
-    type: {type: String, default: 'text'},
     errorText: String,
   });
   const model = defineModel();
 
   const { fieldId } = useGenerateId(props.name);
-
 </script>
 
 <template>
   <div>
     <label :for="fieldId" class="block">{{ label }}</label>
-    <input
+    <textarea
       v-model="model"
-      :type="type"
       :id="fieldId"
       :name="name"
       :placeholder="placeholder"
       class="border"
-    />
+    >
+    </textarea>
     <p
       v-if="errorText !== undefined"
       class="text-xs text-red-600"
